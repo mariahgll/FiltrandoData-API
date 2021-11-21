@@ -5,29 +5,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Style -->
     <link rel="stylesheet" href="style.css">
+    <!-- Font Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https: //fonts.googleapis.com/css2? família = Roboto: ital, wght @ 0,400; 0,900; 1,400 & display = swap "
+        rel=" stylesheet ">
 
     <title>Filtrando Data - API</title>
 </head>
 
 <body>
-    <div class="text">
-    <header>
-        <p>
-            Veja aqui quais datas estão disponíveis:
-        </p>
-    </header>
+    <div id="container">
+        <header>
+            <img src="GDS-png" width="100px" height="100px"></a>
+            <h1>Filtrando Data - API</h1>
+            <p>Aplicação para o processo seletivo.</p>
+        </header>
 
-    <div>
-        <label>Digite uma data:</label>
-        <input type="text" id="inputData" name="inputData">
-        <button onclick="filtrarData()">Verificar</button>
-    </div> 
+        <main>
+            <div>
+                <p>Verifique uma data na agenda e veja se ela está disponível.</p>
+                <p>Siga o formato de <span>(mm-dd-aaaa)</span></p>
+            </div>
+            <div>
+                <label><span>Digite uma data:</span></label>
+                <input type="number" id="inputData" name="inputData">
+                <button class="botao" onclick="filtrarData()">Verificar</button>
+            </div>
 
-    <div>
-        <h3>Resultado:</h3>
-        <p id="result"></p>
-    </div>
+            <div>
+                <h3>Resultado:</h3>
+                <p id="result"></p>
+            </div>
+        </main>
+
+        <footer>
+            <p>Por Mariah Guedes.</p>
+            <div>
+                <a target="_blank"
+                    href="https://www.linkedin.com/in/mariah-guedes"><img
+                        src="icon-linkedin.png" width="20px" height="20px"></a>
+                <a target="_blank" href="https://github.com/mariahgll"><img src="icon-github.png" width="20px"
+                        height="20px"></a>
+            </div>
+        </footer>
     </div>
 
     <script src="index.js"></script>

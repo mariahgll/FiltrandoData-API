@@ -1,10 +1,84 @@
-body {
-        background-image: linear-gradient(to right, rgb(91, 172, 80) , rgb(161, 243, 158));
+/* root */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.text {
-    background-color: rgb(255, 255, 255);
+body {
+    font-family: 'roboto', sans-serif;
+    font-size: 18px;
+}
+
+#container {
+    height: 100vh;
+    background-image: linear-gradient(to right, rgb(80, 168, 69) , rgb(181, 255, 179));
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    
+    text-align: center;
+    padding: 12px;
+}
+
+header {
+    position: absolute;
+    top: 10px;
+}
+
+h1 {
+    color: rgb(3, 41, 19);
+}
+
+#result {
+    margin-top: 10px;
+    color: rgb(57, 158, 37);
+}
+
+main {
+    margin-top: 100px;
+    border: 4px rgb(3, 41, 19) solid;
+    border-radius: 7px;
+    padding: 25px;
+    background-color: rgb(241, 237, 197);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+span {
+    font-weight: bolder;
+}
+
+input[type=number] {
+    border: 2px solid rgb(3, 41, 19);
+    border-radius: 2px;
+    background-color: rgb(160, 219, 152);
+    height: 25px;
+    margin-left: 5px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.botao {
+    background-color: rgb(150, 214, 141);
+    color: rgb(3, 41, 19);
+    font-weight: bolder;
+    border: 2px soli rgb(3, 41, 19);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 10px;
+    padding: 7px;
+    margin: 5px;
+}
+
+footer {
+    background-color: rgb(3, 41, 19);
+    color: white;
+    width: 100vw;
+    position:absolute;
+    bottom: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
 }
